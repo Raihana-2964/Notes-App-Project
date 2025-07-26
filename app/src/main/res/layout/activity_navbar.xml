@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFECE8">
+
+    <!-- Background Image Covering Half of the Page -->
+    <ImageView
+        android:id="@+id/navbarBackground"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/navbar_baner"
+        android:contentDescription="@string/navbar_background_image"
+        android:layout_alignParentTop="true" />
+
+    <!-- Wrapper Layout to Center Content -->
+    <LinearLayout
+        android:id="@+id/centerContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navbarBackground"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="50dp">
+        <!-- user profile -->
+        <TextView
+            android:id="@+id/userProfileTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/user_profile"
+            android:textSize="26sp"
+            android:textColor="#E76E34"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"/>
+
+        <!-- Welcome User Text -->
+        <TextView
+            android:id="@+id/welcomeUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_user"
+            android:textSize="30sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- User Email Text -->
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_user_example_com"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <!-- Home Button -->
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/centerContent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/home"
+        android:textSize="18sp"
+        android:backgroundTint="#E76E34"
+        android:textColor="#FFFFFF"
+        android:elevation="8dp"
+        android:padding="16dp"/>
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:minHeight="48dp"
+        android:layout_below="@id/homeButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#E76E34"
+        android:elevation="8dp"
+        android:padding="12dp"
+        android:text="@string/logout"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"/>
+
+    <!-- About and Feedback Button -->
+    <Button
+        android:id="@+id/aboutFeedbackButton"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/logoutButton"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:backgroundTint="#E76E34"
+    android:elevation="8dp"
+    android:padding="12dp"
+    android:text="@string/navbar_about_and_feedback"
+    android:textColor="#FFFFFF"
+    android:textSize="18sp"/>
+
+
+
+</RelativeLayout>

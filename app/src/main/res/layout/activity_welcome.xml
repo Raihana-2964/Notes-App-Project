@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="#E76E34"
+android:gravity="center"
+android:padding="16dp">
+
+<ImageView
+    android:id="@+id/notes_app_icon"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:layout_gravity="center"
+    android:layout_marginBottom="20dp"
+    android:src="@drawable/img_1"
+    android:contentDescription="@string/notes_app_icon" />
+
+<TextView
+    android:id="@+id/notes_app"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp"
+    android:text="@string/notes_app"
+    android:textSize="40sp"
+    android:textStyle="bold"
+    android:textColor="#FFFFFF" />
+
+<TextView
+    android:id="@+id/organize_your_thoughts_easily"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="30dp"
+    android:text="@string/organize_your_thoughts_easily"
+    android:textSize="20sp"
+    android:textColor="#FFFFFF" />
+
+<Button
+    android:id="@+id/get_started"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="20dp"
+    android:text="@string/get_started"
+    android:textSize="18sp"
+    android:textColor="#FFFFFF"
+    android:backgroundTint="#000000" />
+
+<TextView
+    android:id="@+id/boost_your_productivity"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:text="@string/boost_your_productivity"
+    android:textSize="18sp"
+    android:textColor="#000000" />
+</LinearLayout>

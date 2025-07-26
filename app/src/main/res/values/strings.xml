@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">yt</string>
+    <string name="add_note">Add Note</string>
+    <string name="enter_the_description">Enter the description</string>
+    <string name="enter_the_title">Enter the title</string>
+    <string name="notes">Notes</string>
+    <string name="list_of_notes">List of notes</string>
+    <string name="add_a_new_note">Add a new note</string>
+    <string name="titleTextView">Title</string>
+    <string name="contentTextView">Content</string>
+    <string name="edit_note">Edit Note</string>
+
+    <string name="get_started">Get Started</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login">Login</string>
+    <string name="you_have_account">Don\'t have an account? Register</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm">Confirm Password</string>
+    <string name="register">Register</string>
+    <string name="organize_your_thoughts_easily">Organize your thoughts easily</string>
+    <string name="notes_app">Notes App</string>
+    <string name="boost_your_productivity">Boost your productivity</string>
+    <string name="notes_app_icon">Notes App Icon</string>
+
+    <string name="userprofile">☰</string>
+    <string name="welcome_user">Username: User</string>
+    <string name="logout">Logout</string>
+    <string name="navbar_background_image">Background image for user profile</string>
+    <string name="email_user_example_com">Gmail: user@example.com</string>
+    <string name="home">All Notes</string>
+    <string name="user_profile">USER PROFILE</string>
+
+    <string name="about">ABOUT</string>
+    <string name="description">Notes App is your digital companion to stay organized—add, edit, or delete notes effortlessly, simplifying your daily life.</string>
+    <string name="rate_us">RATE US</string>
+    <string name="submit_feedback">Submit </string>
+    <string name="return_to_home">Back</string>
+    <string name="navbar_about_and_feedback">About and Feedback</string>
+
+</resources>

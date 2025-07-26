@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Notes Header -->
+    <TextView
+        android:id="@+id/notesHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="18dp"
+        android:text="@string/notes"
+        android:textColor="@color/orange"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-black"/>
+
+    <!-- Navbar Button (Top-Right Corner) -->
+
+    <!-- RecyclerView for Notes -->
+    <Button
+        android:id="@+id/openNavbarButton"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="10dp"
+        android:elevation="2dp"
+        android:padding="1dp"
+        android:text="@string/userprofile"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/notesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/notesHeader"
+        android:layout_above="@id/addButton"
+        android:padding="5dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/list_of_notes"
+        android:focusable="true"
+        android:importantForAccessibility="yes" />
+
+    <!-- Add Note Floating Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/baseline_add_box_24"
+        app:tint="@color/white"
+        android:backgroundTint="@color/orange"
+        android:contentDescription="@string/add_a_new_note" />
+</RelativeLayout>

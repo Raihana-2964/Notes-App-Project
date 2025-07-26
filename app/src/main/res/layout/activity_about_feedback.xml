@@ -1,0 +1,96 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F7EF"
+    android:padding="24dp">
+
+<RelativeLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+<!-- About Section Title -->
+<TextView
+    android:id="@+id/aboutTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/about"
+    android:textSize="26sp"
+android:textStyle="bold"
+android:textColor="#000000"
+android:layout_alignParentTop="true"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="40dp"
+android:fontFamily="sans-serif-medium"
+    />
+
+<!-- About Section Description -->
+<TextView
+    android:id="@+id/aboutText"
+    android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="@string/description"
+android:textSize="18sp"
+android:textColor="#212121"
+android:layout_below="@id/aboutTitle"
+android:layout_marginTop="16dp"
+android:gravity="center"
+android:fontFamily="sans-serif-black" />
+
+<!-- Rate Us Section Title -->
+<TextView
+    android:id="@+id/rateUsTitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/rate_us"
+    android:textSize="26sp"
+    android:textStyle="bold"
+    android:textColor="#000000"
+    android:layout_below="@id/aboutText"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="40dp"
+    android:fontFamily="sans-serif-medium" />
+
+<!-- RatingBar -->
+<RatingBar
+    android:id="@+id/feedbackRatingBar"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:numStars="5"
+    android:stepSize="1"
+    android:layout_below="@id/rateUsTitle"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:scaleX="1.2"
+android:scaleY="1.2" />
+
+<!-- Submit Feedback Button -->
+<Button
+    android:id="@+id/submitButton"
+    android:layout_width="200dp"
+android:layout_height="wrap_content"
+android:text="@string/submit_feedback"
+android:layout_below="@id/feedbackRatingBar"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="30dp"
+android:backgroundTint="#E76E34"
+android:textColor="#FFFFFF"
+android:textSize="18sp"
+android:fontFamily="sans-serif-medium" />
+
+<!-- Return to Home Button -->
+<Button
+    android:id="@+id/returnHomeButton"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:text="@string/return_to_home"
+    android:layout_below="@id/submitButton"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:backgroundTint="#E76E34"
+android:textColor="#FFFFFF"
+android:textSize="18sp"
+android:fontFamily="sans-serif-medium" />
+
+</RelativeLayout>
+    </ScrollView>

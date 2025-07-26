@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="#E76E34"
+    android:padding="16dp">
+
+    <!-- White Box Section -->
+    <LinearLayout
+        android:id="@+id/white_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="#EFECE8"
+        android:padding="80dp"
+        android:elevation="8dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp">
+
+        <EditText
+            android:id="@+id/enter_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_username"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:backgroundTint="#000000"
+            android:textColor="#000000"
+            android:textColorHint="#666666"
+            android:autofillHints="username"
+            android:minHeight="48dp"
+            android:inputType="text"
+            android:maxWidth="480dp"/>
+
+        <EditText
+            android:id="@+id/enter_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_password"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:backgroundTint="#000000"
+            android:textColor="#000000"
+            android:textColorHint="#666666"
+            android:autofillHints="password"
+            android:layout_marginTop="12dp"
+            android:minHeight="48dp"
+            android:maxWidth="480dp"/>
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="20dp"
+            android:padding="12dp"
+            android:backgroundTint="#A01AA0"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/you_have_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/white_box"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/you_have_account"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="12dp"
+        android:minHeight="48dp" />
+</RelativeLayout>
+
